@@ -143,9 +143,19 @@ programa {
  
          enquanto(investir < 0 ou saldo - investir < 0)
          {
+           se (investir < 0)
+          {
            escreva("Digite um valor valido: ")
            leia(investir)
            limpa()
+          }
+
+           senao
+           {
+            escreva("Você não pode investir além do saldo disponível em sua conta, tente novamente: ")
+            leia(investir)
+            limpa()
+           }
          }
 
          escreva("Meses que desejas investir: ")
