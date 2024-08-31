@@ -82,9 +82,19 @@ programa {
  
          enquanto(saque < 0 ou saldo - saque < 0)
          {
+           se(saque < 0)
+          {
            escreva("Digite um valor valido: ")
            leia(saque)
            limpa()
+          }
+
+          senao
+          {
+            escreva("Você não pode realizar saques que excedam o saldo disponível, tente novamente: ")
+            leia(saque)
+            limpa()
+          }
          }
  
          saldo = saldo - saque
