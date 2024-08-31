@@ -3,7 +3,7 @@ programa {
   funcao inicio() 
   {
     //Declaração das Variáveis
-    real saldo = 0, deposito = 0, saque = 0, investir
+    real saldo = 0, deposito, saque, investir
     cadeia loop, senha = "", pswd = "", extrato = ""
     inteiro input, mes
 
