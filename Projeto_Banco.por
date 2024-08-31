@@ -80,7 +80,7 @@ programa {
          leia(saque)
          limpa()
  
-         enquanto(saque < 0 ou saldo - saque < 0)
+         enquanto(saque < 0 ou saque > saldo)
          {
            se(saque < 0)
           {
@@ -151,7 +151,7 @@ programa {
          leia(investir)
          limpa()
  
-         enquanto(investir < 0 ou saldo - investir < 0)
+         enquanto(investir < 0 ou investir > saldo)
          {
            se (investir < 0)
           {
