@@ -40,19 +40,18 @@ programa {
  
          escreva("Digite o valor que deseja depositar: ")
          leia(deposito)
-         limpa()
  
          enquanto(deposito < 0)
          {
+           limpa()
            escreva("Digite um valor valido: ")
            leia(deposito)
-           limpa()
          }
  
          saldo = saldo + deposito
          extrato = extrato + "--DEPOSITO--\n" + "R$" + mat.arredondar(deposito,2) +"\n"
  
-         escreva("Sucesso! Seu saldo agora é: ", mat.arredondar(saldo, 2) ,"\n")
+         escreva("Sucesso! Seu saldo agora é: ", mat.arredondar(saldo, 2) ,"\n\n")
          escreva("Aperte ENTER para continuar ou 0 para sair: ")
          leia(loop)
          limpa()
@@ -78,29 +77,28 @@ programa {
  
          escreva("Digite o valor que deseja sacar: ")
          leia(saque)
-         limpa()
  
          enquanto(saque < 0 ou saque > saldo)
          {
            se(saque < 0)
           {
+           limpa()
            escreva("Digite um valor valido: ")
            leia(saque)
-           limpa()
           }
 
           senao
           {
+            limpa()
             escreva("Você não pode realizar saques que excedam o saldo disponível, tente novamente: ")
             leia(saque)
-            limpa()
           }
          }
  
          saldo = saldo - saque
          extrato = extrato + "--SAQUE--\n" + "R$"+ mat.arredondar(saque,2) +"\n"
  
-         escreva("Sucesso! Você retirou R$",mat.arredondar(saque,2), " e agora tem R$", mat.arredondar(saldo, 2) ," de saldo na sua conta.\n")
+         escreva("Sucesso! Você retirou R$",mat.arredondar(saque,2), " e agora tem R$", mat.arredondar(saldo, 2) ," de saldo na sua conta.\n\n")
          escreva("Aperte ENTER para continuar ou 0 para sair: ")
          leia(loop)
          limpa()
@@ -149,22 +147,21 @@ programa {
  
          escreva("Quantidade que desejas investir: ")
          leia(investir)
-         limpa()
  
          enquanto(investir < 0 ou investir > saldo)
          {
            se (investir < 0)
           {
+           limpa()
            escreva("Digite um valor valido: ")
            leia(investir)
-           limpa()
           }
 
            senao
            {
+            limpa()
             escreva("Você não pode investir além do saldo disponível em sua conta, tente novamente: ")
             leia(investir)
-            limpa()
            }
          }
 
@@ -189,7 +186,7 @@ programa {
           saldo = saldo + investir
           extrato = extrato + "--INVESTIMENTO--\n" + "R$" + mat.arredondar(investir,2) +"+\n"
  
-          escreva("seu rendimento foi de: R$", mat.arredondar(investir, 2), " seu saldo toal agora é: R$", mat.arredondar(saldo, 2),"\n")
+          escreva("seu rendimento foi de: R$", mat.arredondar(investir, 2), " seu saldo toal agora é: R$", mat.arredondar(saldo, 2),"\n\n")
           escreva("Aperte ENTER para continuar ou 0 para sair: ")
           leia(loop)
           limpa()
