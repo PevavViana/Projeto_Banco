@@ -1,2 +1,2 @@
 # Projeto_Banco
-Projeto Banco feito no portugol  28/08/24
+Projeto Banco feito no portugol e terminado em 30/08/2024
