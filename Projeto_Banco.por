@@ -168,6 +168,8 @@ programa {
            }
          }
 
+         saldo = saldo - investir
+
          escreva("Meses que desejas investir: ")
          leia(mes)
          limpa()
