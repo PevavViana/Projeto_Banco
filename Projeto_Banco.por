@@ -52,13 +52,10 @@ programa {
          extrato = extrato + "--DEPOSITO--\n" + "R$" + mat.arredondar(deposito,2) +"\n"
  
          escreva("Sucesso! Seu saldo agora é: ", mat.arredondar(saldo, 2) ,"\n\n")
-         escreva("Aperte ENTER para continuar ou 0 para sair: ")
+         escreva("Aperte ENTER para continuar: ")
          leia(loop)
          limpa()
- 
-         se(loop == "0")
-         {input = 0}
-         
+
         pare
 
         //Saque
@@ -99,12 +96,10 @@ programa {
          extrato = extrato + "--SAQUE--\n" + "R$"+ mat.arredondar(saque,2) +"\n"
  
          escreva("Sucesso! Você retirou R$",mat.arredondar(saque,2), " e agora tem R$", mat.arredondar(saldo, 2) ," de saldo na sua conta.\n\n")
-         escreva("Aperte ENTER para continuar ou 0 para sair: ")
+         escreva("Aperte ENTER para continuar: ")
          leia(loop)
          limpa()
  
-         se (loop == "0")
-         {input = 0}
          pare
  
         //Extrato
@@ -122,13 +117,10 @@ programa {
          }
  
          escreva(extrato)
-         escreva("\nAperte ENTER para continuar ou 0 para sair: ")
+         escreva("\nAperte ENTER para continuar: ")
          leia(loop)
          limpa()
- 
-         se(loop == "0")
-         {input = 0}
- 
+
         pare
 
         //Investimento
@@ -185,12 +177,9 @@ programa {
           extrato = extrato + "--INVESTIMENTO--\n" + "R$" + mat.arredondar(investir,2) +"+\n"
  
           escreva("seu rendimento foi de: R$", mat.arredondar(investir, 2), " seu saldo toal agora é: R$", mat.arredondar(saldo, 2),"\n\n")
-          escreva("Aperte ENTER para continuar ou 0 para sair: ")
+          escreva("Aperte ENTER para continuar: ")
           leia(loop)
           limpa()
- 
-          se(loop == "0")
-          {input = 0}
  
         pare
       }
