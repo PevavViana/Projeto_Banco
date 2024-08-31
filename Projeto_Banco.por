@@ -179,9 +179,7 @@ programa {
          }
  
          para(inteiro contadorMeses = 0; contadorMeses < mes; contadorMeses++)
-         {
-          investir = investir * 1.02
-         }
+         {investir = investir * 1.02}
           
           saldo = saldo + investir
           extrato = extrato + "--INVESTIMENTO--\n" + "R$" + mat.arredondar(investir,2) +"+\n"
