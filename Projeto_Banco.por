@@ -2,7 +2,7 @@ programa {
   inclua biblioteca Matematica --> mat
   funcao inicio() 
   {
-    //Declaração das Variáveis
+    //DeclaraÃ§Ã£o das VariÃ¡veis
     real saldo = 0, deposito = 0, saque = 0, investir
     cadeia loop, senha = "", pswd = "", extrato = ""
     inteiro input, mes
@@ -18,7 +18,7 @@ programa {
       escreva("| 0-Sair                     |\n")
       escreva("|------------Menu------------|\n")
 
-      escreva("Selecione uma das opções: ")
+      escreva("Selecione uma das opÃ§Ãµes: ")
       leia(input)
       limpa()
       
@@ -50,9 +50,9 @@ programa {
          }
  
          saldo = saldo + deposito
-         extrato = extrato + "--DEPOSITO--\n" + deposito +"\n"
+         extrato = extrato + "--DEPOSITO--\n" + mat.arredondar(deposito,2) +"\n"
  
-         escreva("Sucesso! Seu saldo agora é: ", mat.arredondar(saldo, 2) ,"\n")
+         escreva("Sucesso! Seu saldo agora Ã©: ", mat.arredondar(saldo, 2) ,"\n")
          escreva("Aperte ENTER para continuar ou 0 para sair: ")
          leia(loop)
          limpa()
@@ -88,9 +88,9 @@ programa {
          }
  
          saldo = saldo - saque
-         extrato = extrato + "--SAQUE--\n" + saque +"\n"
+         extrato = extrato + "--SAQUE--\n" + mat.arredondar(saque,2) +"\n"
  
-         escreva("Sucesso! Você retirou R$",saque, " e agora tem R$", mat.arredondar(saldo, 2) ," de saldo na sua conta.\n")
+         escreva("Sucesso! VocÃª retirou R$",mat.arredondar(saque,2), " e agora tem R$", mat.arredondar(saldo, 2) ," de saldo na sua conta.\n")
          escreva("Aperte ENTER para continuar ou 0 para sair: ")
          leia(loop)
          limpa()
@@ -165,9 +165,9 @@ programa {
          }
           
           saldo = saldo + investir
-          extrato = extrato + "--INVESTIMENTO--\n" + investir +"\n"
+          extrato = extrato + "--INVESTIMENTO--\n" + mat.arredondar(investir,2) +"\n"
  
-          escreva("seu rendimento foi de: R$", mat.arredondar(investir, 2), " seu saldo toal agora é: R$", mat.arredondar(saldo, 2),"\n")
+          escreva("seu rendimento foi de: R$", mat.arredondar(investir, 2), " seu saldo toal agora Ã©: R$", mat.arredondar(saldo, 2),"\n")
           escreva("Aperte ENTER para continuar ou 0 para sair: ")
           leia(loop)
           limpa()
