@@ -147,6 +147,8 @@ programa {
            leia(investir)
            limpa()
          }
+
+         extrato = extrato + "--INVESTIMENTO--\n" + "R$" + mat.arredondar(investir,2) +"-\n"
  
          escreva("Meses que desejas investir: ")
          leia(mes)
@@ -165,7 +167,7 @@ programa {
          }
           
           saldo = saldo + investir
-          extrato = extrato + "--INVESTIMENTO--\n" + "+R$" + mat.arredondar(investir,2) +"\n"
+          extrato = extrato + "--INVESTIMENTO--\n" + "R$" + mat.arredondar(investir,2) +"+\n"
  
           escreva("seu rendimento foi de: R$", mat.arredondar(investir, 2), " seu saldo toal agora é: R$", mat.arredondar(saldo, 2),"\n")
           escreva("Aperte ENTER para continuar ou 0 para sair: ")
