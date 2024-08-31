@@ -50,7 +50,7 @@ programa {
          }
  
          saldo = saldo + deposito
-         extrato = extrato + "--DEPOSITO--\n" + mat.arredondar(deposito,2) +"\n"
+         extrato = extrato + "--DEPOSITO--\n" + "R$" + mat.arredondar(deposito,2) +"\n"
  
          escreva("Sucesso! Seu saldo agora é: ", mat.arredondar(saldo, 2) ,"\n")
          escreva("Aperte ENTER para continuar ou 0 para sair: ")
@@ -88,7 +88,7 @@ programa {
          }
  
          saldo = saldo - saque
-         extrato = extrato + "--SAQUE--\n" + mat.arredondar(saque,2) +"\n"
+         extrato = extrato + "--SAQUE--\n" + "R$"+ mat.arredondar(saque,2) +"\n"
  
          escreva("Sucesso! Você retirou R$",mat.arredondar(saque,2), " e agora tem R$", mat.arredondar(saldo, 2) ," de saldo na sua conta.\n")
          escreva("Aperte ENTER para continuar ou 0 para sair: ")
@@ -165,7 +165,7 @@ programa {
          }
           
           saldo = saldo + investir
-          extrato = extrato + "--INVESTIMENTO--\n" + mat.arredondar(investir,2) +"\n"
+          extrato = extrato + "--INVESTIMENTO--\n" + "+R$" + mat.arredondar(investir,2) +"\n"
  
           escreva("seu rendimento foi de: R$", mat.arredondar(investir, 2), " seu saldo toal agora é: R$", mat.arredondar(saldo, 2),"\n")
           escreva("Aperte ENTER para continuar ou 0 para sair: ")
