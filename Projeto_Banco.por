@@ -148,8 +148,6 @@ programa {
            limpa()
          }
 
-         extrato = extrato + "--INVESTIMENTO--\n" + "R$" + mat.arredondar(investir,2) +"-\n"
- 
          escreva("Meses que desejas investir: ")
          leia(mes)
          limpa()
